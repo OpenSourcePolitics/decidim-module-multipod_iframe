@@ -1,0 +1,6 @@
+---
+en:
+  decidim:
+    components:
+      multipod_iframe:
+        name: MultipodIframe
