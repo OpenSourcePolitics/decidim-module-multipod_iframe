@@ -31,4 +31,5 @@ Gem::Specification.new do |s|
   end
 
   s.add_dependency "decidim-core", Decidim::MultipodIframe.decidim_version
+  s.add_dependency "deface", ">= 1.9"
 end
