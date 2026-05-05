@@ -1,5 +1,5 @@
 ---
-en:
+nl:
   decidim:
     components:
       multipod_iframe:
@@ -7,5 +7,5 @@ en:
       proposals:
         settings:
           global:
-            enable_iframe: Enable iframe
-            iframe_url: Url of the iframe
+            enable_iframe: Schakel iframe in
+            iframe_url: URL van de iframe

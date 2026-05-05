@@ -1,0 +1,11 @@
+---
+fr:
+  decidim:
+    components:
+      multipod_iframe:
+        name: Iframe Multipod
+      proposals:
+        settings:
+          global:
+            enable_iframe: Autoriser un iframe
+            iframe_url: Url de l'iframe
