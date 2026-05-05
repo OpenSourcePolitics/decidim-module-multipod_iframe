@@ -1,1 +1,11 @@
 /* css for decidim_multipod_iframe */
+
+/* css for proposal_aside deface override */
+.proposal-iframe {
+  width: 100%;
+
+  @screen xl {
+    width: 150%;
+  }
+  overflow: scroll;
+}
