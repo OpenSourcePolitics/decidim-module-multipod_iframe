@@ -18,6 +18,13 @@ module Decidim
         # end
         # root to: "multipod_iframe#index"
       end
+      initializer "decidim-dataspace.add_proposal_component_settings" do
+        manifest = Decidim.find_component_manifest("proposals")
+        manifest.settings(:global) do |settings|
+          settings.attribute :enable_iframe, type: :boolean, default: false
+          settings.attribute :iframe_url, type: :string
+        end
+      end
 
       def load_seed
         nil
