@@ -2,7 +2,9 @@
 
 require "spec_helper"
 
+# rubocop:disable RSpec/DescribeClass
 describe "Proposal show page" do
+  # rubocop:enable RSpec/DescribeClass
   include_context "with a component"
 
   let!(:manifest_name) { "proposals" }
@@ -13,7 +15,7 @@ describe "Proposal show page" do
   let(:proposal_title) { translated(proposal.title) }
 
   context "when proposal component enables iframe" do
-    let!(:string) { decidim_sanitize_translated(proposal.title) + decidim_sanitize_translated(proposal.body)}
+    let!(:string) { decidim_sanitize_translated(proposal.title) + decidim_sanitize_translated(proposal.body) }
 
     before do
       component.update!(settings: { enable_iframe: true, iframe_url: "https://api.multipod.weblyzard.com" })

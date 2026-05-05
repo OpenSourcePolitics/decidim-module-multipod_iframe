@@ -14,7 +14,7 @@ module Decidim
       end
 
       describe "iframe_src" do
-        let!(:string) { decidim_sanitize_translated(proposal.title) + decidim_sanitize_translated(proposal.body)}
+        let!(:string) { decidim_sanitize_translated(proposal.title) + decidim_sanitize_translated(proposal.body) }
 
         context "when there is no query_params added in the iframe url" do
           before do
