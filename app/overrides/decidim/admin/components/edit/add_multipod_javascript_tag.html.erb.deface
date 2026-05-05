@@ -1,0 +1,4 @@
+<!-- insert_after "div.item__edit.item__edit-1col" -->
+<% if @component.manifest.name == :proposals %>
+  <%= append_javascript_pack_tag "decidim_multipod_iframe"  %>
+<% end %>
