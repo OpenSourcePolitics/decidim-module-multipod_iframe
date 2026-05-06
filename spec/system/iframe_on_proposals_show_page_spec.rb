@@ -15,10 +15,10 @@ describe "Proposal show page" do
   let(:proposal_title) { translated(proposal.title) }
 
   context "when proposal component enables iframe" do
-    let!(:string) { decidim_sanitize_translated(proposal.title) + decidim_sanitize_translated(proposal.body) }
+    let!(:string) { "#{decidim_sanitize_translated(proposal.title)}. #{decidim_sanitize_translated(proposal.body)}" }
 
     before do
-      component.update!(settings: { enable_iframe: true, iframe_url: "https://api.multipod.weblyzard.com" })
+      component.update!(settings: { enable_iframe: true, iframe_url: "https://api.example.org" })
       visit_component
       click_on proposal_title
     end
