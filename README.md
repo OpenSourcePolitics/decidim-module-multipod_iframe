@@ -1,11 +1,10 @@
 # Decidim::MultipodIframe
 
-iframe for multipod.
+Iframe for multipod.
 
 ## Usage
 
-MultipodIframe will be available as a Component for a Participatory
-Space.
+MultipodIframe allows admins to enable an iframe that will be displayed on a proposal's show page.
 
 ## Installation
 
@@ -20,6 +19,7 @@ And then execute:
 ```bash
 bundle
 ```
+To enable the iframe, admins should go to the proposals component configuration page, check the "enable iframe" checkbox and provide the url of the iframe.
 
 ## Contributing
 
