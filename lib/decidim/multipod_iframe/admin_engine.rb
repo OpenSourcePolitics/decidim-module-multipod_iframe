@@ -18,7 +18,7 @@ module Decidim
         # end
         # root to: "multipod_iframe#index"
       end
-      initializer "decidim-dataspace.add_proposal_component_settings" do
+      initializer "decidim-multipod-iframe.add_proposal_component_settings" do
         manifest = Decidim.find_component_manifest("proposals")
         manifest.settings(:global) do |settings|
           settings.attribute :enable_iframe, type: :boolean, default: false
